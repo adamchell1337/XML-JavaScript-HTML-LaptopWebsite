@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Seperate CSS for Printing -->
+<link rel="stylesheet" type="text/css" href="printstyle.css" media="print">
+<script src="javascript.js"></script>
+</head>
+
+<header>
+<div class="header">
+	<a href="index.html" class="logo"><img src="homeimages/logo3.png"></a>
+	<div class="navbuttons">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="offers.html">Offers</a>
+	<a href="account.html">Account</a>
+	<a href="report.html" class="active">Report</a>
+	
+  </div>
+</div>
+</header>
+
+
+
+<div id="page-container">
+	<div id="content-wrap">
+	
+		<h1>SOFT20171: Internet Application Development - Report</h1>
+	
+		<div class="row">
+			<div class="singlecolumn">
+				<div class="mainblock">
+					<h2>Navigation Bar</h2>
+					<p>Initially, I wanted to create a horizontal bar for my navigation links and above that, a header that would contain my company logo. 
+					However, after doing this, I realised that on the right hand side of the logo there was just a huge area of whitespace that looked too 
+					empty and I decided to right align all of my navigation bar and place the company logo to the left. I felt that this had a more simplistic 
+					but modern aesthetic and it made better use of the space. </p>
+					<div><img class="reportimg" alt="Promotional Image for Helios Laptop" src="reportimages/finishedheader.jpg"></div>
+					<p>The navigation bar is one of the most important aspects to any web site as it is one of the first things the user notices and uses, and 
+					it is also on every page in the same position. I needed to make my navigation bar responsive, so that it could be used easily on computers, 
+					tablets and mobile devices. I added CSS and media queries so that when the width of the screen hit 1050 pixels, it stacks all of the navigation 
+					buttons downwards to form a vertical menu.  This menu increases the usability of the site as the original buttons would have been too small to 
+					press on a mobile screen. I took into Jakob Nielsen's usability design principles into consideration when designing the navigation bar and 
+					responsive aspects (Nielsen, 1994).</p>
+					<div><img class="reportimg" alt="Promotional Image for Helios Laptop" src="reportimages/cssmedia.jpg"></div>
+					<p>Reference: Nielsen, J., 1994. 10 Usability Heuristics for User Interface Design. [Online]<br> 
+					Available at: https://www.nngroup.com/articles/ten-usability-heuristics/</p>
+				</div>
+				<div class="mainblock">
+					<h2>Footer</h2>
+					<p>I created a footer tag on each of my html pages and styled it with CSS. One of the main issues that I ran into was that if the footer was 
+					just simply placed at the bottom of the html, if the page did not contain a lot of information, the footer would just appear half way up the 
+					page. On the other hand, if the footer was set to position absolute, it would be fixed at a set coordinate and if a page contained a lot of 
+					information, it would appear on top and obstruct the reader’s view. </p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/contentwrapfooter.jpg">
+					<p>I found a solution to this problem by putting all page content into a content wrapper, and then a page container which had properties that 
+					added bottom padding and set the page height to 100% of the viewport. The bottom padding value is set to match the height of the footer, so 
+					that the content and footer will never collide and the footer will always appear bottom most. The content wrapper being set to 100% of the 
+					viewport means that even on a page with less information, the footer would always only be visible if the user scrolled down. I also used a 
+					media query to reduce the font size of the footer on mobile devices.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/mediafontsize.jpg">
+				</div>
+				<div class="mainblock">
+					<h2>Responsive Wireframe</h2>
+					<h2>PC:</h2>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/pcwireframe.jpg">
+					<h2>Tablet/Mobile:</h2>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/mobilewireframe.jpg">
+				</div>
+				<div class="mainblock">
+					<h2>Home Page</h2>
+					<p>I wanted my home page to be made up of separate ‘blocks’ of information which each have a heading, picture, text etc. I thought that having a
+					smaller left column containing information about the business would be effective as it keeps all relevant information together. The main column 
+					contains different articles and news updates about products the store sells.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/sidebyside.jpg">
+					<p>I made use of the CSS flex property to create one column at 30% and 
+					the other at 70%, so that they would be responsive and fill the screen no matter how big it was. I then used a media query and the flex-wrap 
+					property to stack the columns on top of each other if the screen width got below 700px, as the content would become too small to display 
+					side by side. </p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/flexcss.jpg">
+				</div>
+				<div class="mainblock">
+					<h2>Products Page</h2>
+					<p>My initial idea for my products page was to have all the products in wide rectangles in a list type view, however I decided to go for a more 
+					advanced product grid area as I felt that this would in turn be more responsive and easier to contain and represent corresponding information. 
+					After creating some div tags and a structure within the HTML, I realised that this was a really inefficient method as it meant I would have to 
+					create unique ids for every product box and if more products were to be added to the site, more tags would have to be created manually to store 
+					that product. </p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/products.jpg">
+					<p>I decided to create my product boxes with JavaScript at runtime, while fetching the data from the product XML file. I created my functions 
+					to connect to and load the XML file. I then created a function to loop through each product within the XML and individually insert each piece of 
+					product data into a separate div tag within an array, each with their own class for formatting purposes. These arrays of div tags were then 
+					appended to an existing div tag in the html body so that they would be displayed. I also made use of the CSS flex box properties here to make 
+					the page responsive and adapt to the width of the screen. This function was set to run automatically when the body loads so that to the user it 
+					appears all of the products were on the page from the beginning. Using this method meant that any number of products could be added or taken away 
+					from the XML file and they would still be displayed and formatted correctly.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/xmloutput.jpg">
+					<p>I applied this same logic to create a function that would allow the user to essentially filter the products that were displayed to them. I used 
+					XPath to create queries that would output the corresponding values and then used a slightly modified version of the previous function to output only 
+					those products that matched the criteria. The function would also clear the other div tags of their product information so that only the correct 
+					products were being displayed. The user can filter the products using the drop down box and there is an on change event listener that runs the function 
+					with the correct query automatically.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/select.jpg">
+				</div>
+				<div class="mainblock">
+					<h2>Slideshow</h2>
+					<p>I decided to create the slideshow on the offers page, as then it could be used to display current offers or promotions the business is offering. I 
+					know it needed to have small thumbnails of each of the slides at the bottom and also somewhere to display a caption to accompany the slide. I created 
+					a main image container and then a div for the caption text to go inside. I then created a div to store each of the thumbnails, styling them to have a 
+					shadow and a pointer cursor, so that the user knows they can be clicked on to go to that image. I also created the buttons for next, previous and 
+					random slide, which had CSS properties to make them change colour when hovered on/pressed.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/offergallery.jpg">
+					<p>I then created the functions for each button and the main function that each of the buttons’ functions would call to display the next slide. This was 
+					achieved by storing the current slide number, and manipulating this to either be one more, one less or randomised, to then display the next slide. The 
+					thumbnails also had a function so that if they were pressed, their slide number would be displayed and the active thumbnail’s opacity be made 100% so that 
+					the user can see which one is currently being shown. The alt text for each image was then output as the caption text.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/slidecss.jpg">
+					<p>One problem that occurred was that sometimes when you pressed the random slide button, it wouldn’t change the slideshow. I figured out that this was due
+					to the random number being generated matched the current slide number and therefore stayed the same. To fix this, I had to add an extra if statement to check 
+					if the new random number was different to the current slide number, and if it was, it generates a new one.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/rand.jpg">
+				</div>
+				<div class="mainblock">
+					<h2>Login / Register Forms</h2>
+					<p>My initial thought on how to create this page was to have two forms side by side that the user could choose between, the left being a login form and the right 
+					a register form. This approach could have worked however it could have confused some users as to which one to use as they can see an email and password entry field 
+					on both. Instead I opted to display just the login form by default, as this is going to be the most frequently used by site visitors, and then I added a message 
+					and a link to go to the Register page if the user had not yet made an account. When the link is pressed, the login form is hidden and the register form appears 
+					through the use of a JavaScript Function.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/registerhere.jpg">
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/switchform.jpg">
+					<p>An essential part of forms is the validation that goes on to ensure that all data that is required is entered and in the correct format where necessary. I ensured 
+					that none of the entry fields could be left empty by creating a function that runs when the submit button is pressed to check for any null values. If a null value is 
+					found, the user receives a prompt in red text telling them what they need to do and the corresponding field receives a red border style to make it easier for the user 
+					to rectify. If all fields have been filled in, the user receives a green text message to inform them they have successfully logged in / registered.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/loginvalidate.jpg">
+					<p>On the registration form there are two checkboxes, one for accepting the terms and conditions, and the other to opt in to receive email newsletters. The form 
+					validation function only processes the data if the terms and conditions box has been checked, as this is a required part of the form completion, whereas the newsletter 
+					is optional. Another example of this that I implemented was a comparison between the two password entries to check if they were equal.</p>
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/notagreed.jpg">
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/passwordterms.jpg">
+					<img class="reportimg" alt="Screenshot from website/code" src="reportimages/showpassword.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+	
+	<footer id="footer">
+	<p><br>Copyright © 2020 TopTech - Adam Chell - All Rights Reserved.</p>
+	</footer>
+</div>
+
+
+</body>
+</html>

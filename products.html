@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Seperate CSS for Printing -->
+<link rel="stylesheet" type="text/css" href="printstyle.css" media="print">
+<script src="javascript.js"></script>
+</head>
+
+<header>
+<div class="header">
+	<a href="index.html" class="logo"><img src="homeimages/logo3.png"></a>
+	<div class="navbuttons">
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="offers.html">Offers</a>
+	<a href="account.html">Account</a>
+	<a href="report.html">Report</a>
+	</div>
+</div>
+</header>
+
+<body onload="loadXML('')" >
+
+
+<div id="page-container">
+	<div id="content-wrap">
+	
+		<h1>Products - Gaming Laptops</h1>
+	
+		<p id="filter" >Filter Results:</p>
+		
+		<select id="productquery" onchange="loadXML('select')" >
+			<option value="/PRODUCTS/LAPTOP">Show All</option>
+			<option value="//DESC[contains(text(),'15.6')]/parent::node()">15.6" Screen</option>
+			<option value="//DESC[contains(text(),'17.3')]/parent::node()">17.3" Screen</option>
+			<option value="//DESC[contains(text(),'i9')]/parent::node()">Intel i9 Processor</option>
+			<option value="//DESC[contains(text(),'i7')]/parent::node()">Intel i7 Processor</option>
+		</select>
+		
+		<div id="resultarea" >
+		</div>
+		
+		<div id="products" >
+		</div>
+		
+	</div>
+	
+	<footer id="footer">
+	<p><br>Copyright © 2020 TopTech - Adam Chell - All Rights Reserved.</p>
+	</footer>
+</div>
+
+
+
+</body>
+</html>

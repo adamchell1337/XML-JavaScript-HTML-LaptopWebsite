@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRODUCTS>
+	<LAPTOP>
+		<BRAND>ACER</BRAND>
+		<MODEL>Predator Helios 700</MODEL>
+		<DESC>17.3" Intel® Core™ i9 RTX 2070</DESC>
+		<PRICE>3,499.00</PRICE>
+		<IMAGE>productimages/acerpredatorhelios.jpg</IMAGE>
+	</LAPTOP>
+	<LAPTOP>
+		<BRAND>ASUS</BRAND>
+		<MODEL>ROG Zephyrus S G703GX</MODEL>
+		<DESC>17.3" Intel® Core™ i9 RTX 2080</DESC>
+		<PRICE>4,499.00</PRICE>
+		<IMAGE>productimages/asusrogzephyrus.jpg</IMAGE>
+	</LAPTOP>
+	<LAPTOP>
+		<BRAND>ACER</BRAND>
+		<MODEL>Predator Triton 900</MODEL>
+		<DESC>17.3” Intel® Core™ i7 RTX 2080</DESC>
+		<PRICE>3,799.00</PRICE>
+		<IMAGE>productimages/acerpredatortriton.jpg</IMAGE>
+	</LAPTOP>
+	<LAPTOP>
+		<BRAND>HP</BRAND>
+		<MODEL>OMEN X Dual Screen</MODEL>
+		<DESC>15.6" Intel® Core™ i9 RTX 2080</DESC>
+		<PRICE>3,499.00</PRICE>
+		<IMAGE>productimages/hpomenx.jpg</IMAGE>
+	</LAPTOP>
+	<LAPTOP>
+		<BRAND>ALIENWARE</BRAND>
+		<MODEL>Area 51m</MODEL>
+		<DESC>17.3" Intel® Core™ i9 RTX 2080</DESC>
+		<PRICE>3,499.00</PRICE>
+		<IMAGE>productimages/alienwarearea51m.jpg</IMAGE>
+	</LAPTOP>
+	<LAPTOP>
+		<BRAND>ALIENWARE</BRAND>
+		<MODEL>M15</MODEL>
+		<DESC>15.6" Intel® Core™ i9 RTX 2080</DESC>
+		<PRICE>2,999.00</PRICE>
+		<IMAGE>productimages/alienwarem15.jpg</IMAGE>
+	</LAPTOP>
+	<LAPTOP>
+		<BRAND>LENOVO</BRAND>
+		<MODEL>Legion Y740-17ICH</MODEL>
+		<DESC>17.3" Intel® Core™ i7 RTX 2080</DESC>
+		<PRICE>2,799.00</PRICE>
+		<IMAGE>productimages/lenovolegion.jpg</IMAGE>
+	</LAPTOP>
+	<LAPTOP>
+		<BRAND>PC SPECIALIST</BRAND>
+		<MODEL>Recoil III RT15 Pro</MODEL>
+		<DESC>15.6" Intel® Core™ i7 RTX 2070</DESC>
+		<PRICE>2,599.00</PRICE>
+		<IMAGE>productimages/pcspecialistrecoiliii.jpg</IMAGE>
+	</LAPTOP>
+	<LAPTOP>
+		<BRAND>MSI</BRAND>
+		<MODEL>GT76 Titan</MODEL>
+		<DESC>17.3" Intel® Core™ i9 RTX 2080</DESC>
+		<PRICE>4,099.00</PRICE>
+		<IMAGE>productimages/msigt76.jpg</IMAGE>
+	</LAPTOP>
+	<LAPTOP>
+		<BRAND>RAZER</BRAND>
+		<MODEL>Blade 15</MODEL>
+		<DESC>15.6" Intel® Core™ i7 RTX 2080</DESC>
+		<PRICE>3,199.00</PRICE>
+		<IMAGE>productimages/razerblade.jpg</IMAGE>
+	</LAPTOP>
+</PRODUCTS>
+	
